@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="main_border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.SceneController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="654.0" prefWidth="142.0" style="-fx-background-color: #0322dd;">
+               <children>
+                  <Button fx:id="clientsBtn" layoutX="3.0" layoutY="55.0" mnemonicParsing="false" onAction="#showPane1" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: #0322dd;" text="Clients" textFill="#fcfcfc" />
+                  <Button fx:id="productsBtn" layoutX="3.0" layoutY="103.0" mnemonicParsing="false" onAction="#showPane2" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: #0322dd;" text="Products" textFill="#fcfcfc" />
+                  <Button fx:id="ordersBtn" layoutX="3.0" layoutY="149.0" mnemonicParsing="false" onAction="#showPane3" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: #0322dd;" text="Create Orders" textFill="#fcfcfc" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="69.0" prefWidth="844.0" style="-fx-background-color: #50f2fa;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="30.0" />
+            <Label prefHeight="70.0" prefWidth="337.0" text=" Warehouse management!" textAlignment="CENTER" textFill="#b735a3">
+               <font>
+                  <Font name="Nirmala UI" size="26.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.14">
+                     <input>
+                        <ColorAdjust hue="-0.04" />
+                     </input>
+                  </Bloom>
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Label prefHeight="343.0" prefWidth="562.0" text="           Welcome to the warehouse management application!" textFill="#ffa217" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>
